@@ -23,7 +23,9 @@ func permute(nums []int) [][]int {
 
 func recurse(allPaths [][]int, currPath []int, nums []int, inuseIndices []bool) [][]int {
 	if len(currPath) == len(nums) {
-		return append(allPaths, currPath)
+		permutation := make([]int, len(currPath))
+		copy(permutation, currPath)
+		return append(allPaths, permutation)
 	}
 	for i := range nums {
 		if inuseIndices[i] {
