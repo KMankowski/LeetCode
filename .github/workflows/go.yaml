@@ -5,12 +5,13 @@ on:
             - synchronize
             - reopened
 jobs:
-    test:
+    go-test:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v5
             - uses: actions/setup-go@v6
               with:
                 go-version: '^1.23.3'
+            - run: cd ./solutions-go
             - run: go build -v ./...
             - run: go test -v ./...
