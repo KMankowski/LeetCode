@@ -1,3 +1,5 @@
+package solutions.p215;
+
 import java.util.PriorityQueue;
 
 class Solution {
