@@ -1,1 +1,0 @@
-../../solutions-java/src/test/java/solutions/p215/SolutionTest.java
