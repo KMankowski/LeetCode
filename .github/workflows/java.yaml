@@ -14,4 +14,4 @@ jobs:
                 java-version: '21'
                 distribution: 'temurin'
             - run: mvn --batch-mode --update-snapshots verify
-              working-directory: ./solutions-java
+              working-directory: ./java
