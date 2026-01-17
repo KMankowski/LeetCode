@@ -1,5 +1,11 @@
 package main
 
+import "fmt"
+
+func main() {
+	fmt.Println(topKFrequent([]int{1, 2, 2, 3, 3, 3}, 2))
+}
+
 func topKFrequent(nums []int, k int) []int {
 	numToFrequency := make(map[int]int)
 	for _, num := range nums {
