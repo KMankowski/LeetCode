@@ -1,5 +1,11 @@
 package main
 
+import "fmt"
+
+func main() {
+	fmt.Println(rotateElements([]int{1, -2, 3, -4}, 3))
+}
+
 func rotateElements(nums []int, k int) []int {
 	newNums := make([]int, len(nums))
 
